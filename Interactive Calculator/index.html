@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <h2>SIMPLE CALCULATOR</h2>
+
+    <div class="container">
+        <h2>First Number</h2> 
+        <input id="num1" name="num1" type="text">
+        <h2>Second Number</h2> 
+        <input id="num2" name="num2" type="text">
+        <br>
+        <br>
+        <br>
+    <input checked id="box1" name="sign-area" type="button" value="+" onclick="Sum()" >
+    <h1 id="res"></h1>
+    <input id="box2" name="sign-area" type="button" value="-" onclick="Subtract()">
+    <input id="box3" name="sign-area" type="button" value="*" onclick="multiply()" >
+    <input id="box4" name="sign-area" type="button" value="/" onclick="divide()">
+    
+    <br>
+    <br>
+    <img src="img/nm.png" id="logo">
+
+
+
+</div>
+    <script>
+
+        var icon= document.getElementById("logo");
+        icon.onclick=function(){
+
+                
+               if(document.body.classList.toggle("darktheme")) {
+                   logo.src = "img/sun.png";
+               }else{
+                logo.src = "img/nm.png";
+               }
+        }
+
+    </script>
+    <script src='script.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
