@@ -1,0 +1,39 @@
+html, body {
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.container {
+    width: 360px;
+}
+#tasks{
+
+    background-color: aliceblue;
+    padding: 30px 50px;
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    
+}
+
+
+.task{
+    background-color:blanchedalmond;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+
+
+}
+.done{
+    text-decoration: line-through;
+
+}
